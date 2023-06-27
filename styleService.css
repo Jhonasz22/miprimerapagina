@@ -147,3 +147,13 @@ a {
 .greeting {
   text-align: center;
 }
+
+.alerta {
+  display: flex;
+  justify-content: center;
+}
+
+.myForm {
+  display: flex;
+  justify-content: center;
+}
