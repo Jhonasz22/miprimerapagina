@@ -143,3 +143,7 @@ a {
     flex-direction: column;
   }
 }
+
+.greeting {
+  text-align: center;
+}
