@@ -1,0 +1,137 @@
+body {
+  background-color: rgba(0, 0, 0, 0.661);
+  color: rgb(0, 0, 0);
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  text-align: center;
+}
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.407);
+  border: 1px black solid;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+}
+img {
+  margin: 15px;
+  width: 360px;
+  border: 30px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.735);
+  border: 3px rgb(0, 0, 0) solid;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(24, 0, 102, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+}
